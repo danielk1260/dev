@@ -1,0 +1,70 @@
+.container-row {
+    max-width: 1080px;
+    display: flex;
+    align-content: space-between;
+    margin: 5px auto;
+}
+
+.column {
+    --columns: 12;
+    /* Cantidad de columnas para calcular el grid de forma dinamica */
+    --width: 0;
+    /* Tamaño por defecto de las columnas para el calculo */
+    flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+.twelve {
+    --width: 12;
+}
+
+.eleven {
+    --width: 11;
+}
+
+.ten {
+    --width: 10;
+}
+
+.nine {
+    --width: 9;
+}
+
+.eight {
+    --width: 8;
+}
+
+.seven {
+    --width: 7;
+}
+
+.six {
+    --width: 6;
+}
+
+.five {
+    --width: 5;
+}
+
+.four {
+    --width: 4;
+}
+
+.three {
+    --width: 3;
+}
+
+.two {
+    --width: 2;
+}
+
+.one {
+    --width: 1;
+}
+
+@media only screen and (max-width: 576px) {
+    .container-row {
+        flex-direction: column;
+    }
+
+    /* Transformamos la columna desde el contenedor principal */
+}
