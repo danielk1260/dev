@@ -35,15 +35,33 @@ body {
     background: linear-gradient(to right, #dddddd 0%, #ededed 25%, #f2f2f2 50%, #ededed 75%, #dddddd 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#dddddd', GradientType=1);
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border-bottom: 2px solid #203040;
+    border-bottom: 3px solid #203040;
     margin: 15px 8px;
 }
+
+.hover{
+    transition: .2s all;
+}
+.styles-grid:hover .hover {
+    filter: blur(3px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+.styles-grid:hover .hover:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
 
 .ava {
     width: 100%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
     margin-bottom: 15px;
 }
 
